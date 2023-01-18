@@ -1,3 +1,100 @@
+# <h1 align = "center">Formulário de Cadastro</h1>
+
+ - [Descrição](#descrição)
+ - [Imagens](#imagens)
+ - [Etapas](#etapas)
+ - [Tecnologias](#tecnologias)
+ - [Clonagem](#clonagem)
+ - [Depoimento](#depoimento)
+ - [Contato](#contato)
+ - [Desenvolvedora](#desenvolvedora)
+
+## Descrição
+
+ 
+
+## Imagens
+
+<h3> :camera: Página Mobile</h3>
+
+<div align="center">
+<img  src = "" width = "375px"/>
+<img  src = "" width = "375px"/>
+</div>
+
+<h3> :camera: Página Desktop</h3>
+<div align="center">
+<img  src = "" width = "375px"/>
+<img  src = "" width = "375px"/>
+</div>
+
+## Etapas
+
+**Mobile First**
+
+
+
+**Desktop**
+
+
+**Extra**
+
+ - [ ]
+ 
+## Tecnologias
+
+ ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) 
+ 
+Hospedagem:
+
+Em breve, hospedagem no Vercel.
+
+
+ ## Clonagem
+
+ ### Pré-requisitos para rodar <a name="id05"></a>
+
+<br />
+
+- [x] Editor de código de sua preferência (recomendado VS code)
+- [x] Git
+
+
+<br />
+
+### Procedimentos de instalação <a name="id06"></a>
+
+<br />
+
+Clone este repositório usando o comando:
+
+```bash
+git clone https://github.com/<meu_user>/<my-repo>.git
+```
+
+ 
+## Depoimento
+
+
+ 
+
+
+## Desenvolvedora
+
+<br><br>
+<div align="center">
+<img  src = "https://user-images.githubusercontent.com/97410860/212765655-361def29-f259-48d1-af01-36bd93380510.jpg" width = "150px"/>
+<h3>Jennyfer Lamego</h3>
+</div>
+
+
+
+
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 # FormularioCadastro
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
