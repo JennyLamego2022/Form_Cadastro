@@ -1,1 +1,77 @@
-<p>form works!</p>
+<div class="container tLigth">
+  <section class="bg">
+    <div class="nav">
+      <h1 class="logo">Office Stuff</h1>
+
+      <div class="toggle-mode">
+        <span >Tema</span>
+        <input type="checkbox" class="btn-toggle">
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="dados">
+    <form action="">
+      <h1>Dados Cadastrais</h1>
+      <p>Para que possamos concluir a sua compra, é necessário que preencha os dados cadastrais abaixo:</p>
+      <fieldset class="dadosPessoais">
+        <legend class="pessoais">Dados Pessoais</legend>
+        <p>
+          <label for="nome">Nome completo (Nome e Sobrenome)</label>
+          <input type="text" id="nome">
+        </p>
+        <p>
+          <label for="tel">Telefone</label>
+          <input type="number" id="tel">
+        </p>
+        <p>
+          <label for="email">E-mail</label>
+          <input type="text" id="email">
+        </p>
+      </fieldset>
+      <fieldset class="endereco">
+        <p>
+          <label for="tel">Telefone</label>
+          <input type="text" id="tel">
+        </p>
+      </fieldset>
+    </form>
+  </section>
+
+  <section class="pagamento">
+    <form action="">
+      <h1>Dados de Pagamento</h1>
+      <fieldset class="dadosPag">
+        <p>
+          <label for="card">Bandeira do Cartão   </label>
+          <select name="usercard" id="card">
+            <option value="visa">Visa</option>
+            <option value="mc">MasterCard</option>
+            <option value="amex">American Express</option>
+          </select>
+        <p>
+          <label for="fCard">Função do Cartão   </label>
+          <select name="usercard" id="fCard">
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+
+          </select>
+        </p>
+        <p>
+          <label for="number">Número do Cartão</label>
+          <input type="number" id="number" name="cardnumber">
+        </p>
+        <p>
+          <label for="date">Data de Expiração</label>
+          <em>formatted as mm/yyyy</em>
+          <input type="date" id="date" name="expiration">
+        </p>
+      </fieldset>
+
+      <p class="enviar">
+        <button type="submit">Confirma</button>
+      </p>
+    </form>
+  </section>
+</div>

@@ -33,8 +33,8 @@
 **Mobile First**
 
     Header
-- [ ] Imagem e bg;
-- [ ] Botao troca de tema;
+- [x] Imagem e bg;
+- [x] Botao troca de tema;
 
     Formulário
 - [ ] Titulo; 

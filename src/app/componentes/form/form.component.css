@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container{
+  --body-bg-color: rgb(250, 250, 250);
+  --body-moderate-color: hsl(176, 50%, 47%);
+  --body-dark-color: hsl(176, 72%, 28%);
+
+
+
+--text-primary-color: hsl(0, 0%, 0%);
+--text-second-color: hsl(0, 0%, 48%);
+--text-special-color: white;
+}
+
+.container{
+  font-family: 'Commissioner', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body-bg-color) ;
+
+}
+
+.bg{
+  background-image: url(../../../assets/img/image-hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.logo{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.toggle-mode{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 0.8rem;
+    row-gap: 0;
+    /* margin-top: 1rem; */
+    font-size: 1em;
+    font-weight: 500;
+    color:white;
+    /* margin-right: 2em; */
+
+  }
+
+  .toggle-mode input[type=checkbox]{
+    -webkit-appearance: none;
+    background-color: var(--body-dark-color);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    height: 26px;
+    /* padding: 5px; */
+    position: relative;
+    /* border: 1px solid var(--principal-bg-color); */
+  }
+
+  .toggle-mode input[type=checkbox]::before {
+    content: '';
+    top:2px;
+    left:2px;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: var(--body-moderate-color);
+    position: absolute;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+  .toggle-mode input[type=checkbox]:checked::before{
+    transform: translateX(24px);
+    /* border: 1px solid red; */
+  }
