@@ -1,7 +1,7 @@
 <div class="container tLigth">
   <section class="pagamento">
     <form action="#">
-      <h1 class="title">Dados de Pagamento</h1>
+
 
       <fieldset class="dadosCard">
         <div class="imgCard">
@@ -21,6 +21,7 @@
       </fieldset>
 
       <fieldset class="dadosPag">
+        <h1 class="title">Dados de Pagamento</h1>
         <p class="inputCard-box">
           <label for="name">Nome completo</label>
           <input type="text" id="name" name="name" placeholder="Nome e Sobrenome" required>
@@ -50,14 +51,16 @@
         </p>
         <p class="inputCard-box">
           <label for="date">Data de Expiração</label>
-          <em></em>
+          <!-- <em></em> -->
           <input type="date" id="date" name="expiration" required>
+        </p>
+
+        <p class="submit">
+          <button type="submit"><a href="#">Confirma</a></button>
         </p>
       </fieldset>
 
-      <p class="submit">
-        <button type="submit"><a href="#">Confirma</a></button>
-      </p>
+
     </form>
   </section>
 </div>

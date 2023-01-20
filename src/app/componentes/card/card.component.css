@@ -20,30 +20,27 @@
 .container{
   font-family: 'Commissioner', sans-serif;
   width: 100%;
-  height:200vh;
+  height:850px;
   justify-content: center;
   align-items: center;
   background-color: var(--body-bg-color) ;
+  padding-bottom: 2rem;
+  /* background-color: red; */
 
 }
-.title{
-  margin-bottom: 2rem;
-  text-align: center;
-  color: var(--text-primary-color);
-  font-weight: 600;
-}
+
 
 .imgCard{
   background: rgb(2,0,36);
   background: linear-gradient(228deg, rgba(2,0,36,1) 0%, rgba(60,180,172,1) 55%, rgba(20,123,116,1) 100%);
   position:relative;
+  height: 300px;
 }
 
 .back-card{
-
   width: 70%;
   margin-top: 2rem;
-  margin-left: 5rem;
+  margin-left: 6rem;
   margin-bottom: 2rem;
   right: 0;
 }
@@ -61,7 +58,15 @@
   position: absolute;
   top: 6rem;
   right: 0;
-  margin-right: 2.2rem;
+  margin-right: 1.2rem;
+  color: var(--text-special-color);
+  font-size: 0.8rem;
+}
+.title{
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--text-primary-color);
+  font-weight: 600;
 }
 
 .info-card{
@@ -71,7 +76,6 @@
   z-index: 1;
   top: 7.5rem;
   margin-left: 1rem;
-
   font-size: 0.8rem;
   display: flex;
   flex-wrap: wrap;
@@ -116,11 +120,16 @@
 .dadosPag{
   margin-left: 2rem;
   margin-right: 2rem;
+  /* margin-bottom: 2rem; */
   padding: 1.5rem;
-  padding-top: 6rem;
+  padding-top: 2rem;
   background-color: var(--body-bgForm-color);
   border-radius: 8px;
   box-shadow: 2px 2px 5px #0003;
+  position: absolute;
+  top: 1365px;
+  left: 0;
+  right: 0;
 }
 
 .inputCard-box{
@@ -164,3 +173,24 @@ select:hover{
   color: var(--text-primary-color);
 }
 
+.submit button{
+  width: 100%;
+  margin-right: auto;
+  margin-top: 2rem;
+  border:none;
+  background-color: var(--body-dark-color);
+  padding: 0.62rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit button:hover{
+background-color: var(--body-moderate-color);
+}
+
+.submit button a{
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: var(--text-special-color)
+  }
