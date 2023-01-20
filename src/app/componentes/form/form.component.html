@@ -7,12 +7,14 @@
         <span >Tema</span>
         <input type="checkbox" class="btn-toggle">
       </div>
-      
+
     </div>
   </section>
   <div class="formulario">
     <section class="dados">
-      <form action="#">
+
+
+      <form #f="ngForm" method="get">
         <h1 class="title">Dados Cadastrais</h1>
         <p id="instruction">Para que possamos concluir a sua compra, é necessário que preencha os dados cadastrais abaixo:</p>
 
@@ -37,11 +39,11 @@
         <fieldset class="input-group adress">
           <p class="input-box">
             <label for="cep">CEP</label>
-            <input type="number" id="cep" name="cep" placeholder="Ex: 12345567" required>
+            <input type="text" id="cep" name="cep"  (blur)="blur($event)" ngModel [(ngModel)]="cep" placeholder="Ex: 12345567" required f>
           </p>
           <p class="input-box">
             <label for="adress">Endereço</label>
-            <input type="text" id="adress" name="adress" placeholder="" readonly>
+            <input type="text" id="adress" name="adress" ngModel [(ngModel)]="logradouro" placeholder="" required>
           </p>
           <p class="input-box">
             <label for="number">Número da residência</label>
@@ -53,15 +55,15 @@
           </p>
           <p class="input-box API">
             <label for="district">Bairro</label>
-            <input type="text" id="district" name="district" placeholder="Insira o CEP acima para preencher o bairro" required disabled>
+            <input type="text" id="district" name="district" ngModel [(ngModel)]="bairro" placeholder="Insira o CEP acima para preencher o bairro" required disabled>
           </p>
           <p class="input-box API">
             <label for="city">Cidade</label>
-            <input type="text" id="city" name="city" placeholder="Insira o CEP acima para preencher a cidade" required disabled>
+            <input type="text" id="city" name="city" ngModel [(ngModel)]="localidade" placeholder="Insira o CEP acima para preencher a cidade" required disabled>
           </p>
           <p class="input-box API">
             <label for="state">Estado</label>
-            <input type="number" id="state" name="state" placeholder="Insira o CEP acima para preencher o estado" required disabled>
+            <input type="text" id="state" name="state" ngModel [(ngModel)]="uf" placeholder="Insira o CEP acima para preencher o estado" required disabled>
           </p>
         </fieldset>
       </form>
