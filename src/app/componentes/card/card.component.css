@@ -81,7 +81,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .input-box{
@@ -113,16 +113,54 @@
   justify-content: space-between;
 }
 
-.inputCard-box{
-  padding-top: 6rem;
-}
-
 .dadosPag{
- margin-left: 2rem;
+  margin-left: 2rem;
   margin-right: 2rem;
   padding: 1.5rem;
-
+  padding-top: 6rem;
   background-color: var(--body-bgForm-color);
   border-radius: 8px;
   box-shadow: 2px 2px 5px #0003;
 }
+
+.inputCard-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+.inputCard-box input, #card, #fCard{
+  margin: 0.3rem 0;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.inputCard-box input:hover, #card:hover, #fCard:hover{
+  background-color: #eeeeee75;
+}
+
+.inputCard-box input:focus-visible, #card:focus-visible, #fCard:focus-visible{
+  outline: 1px solid var(--body-bgForm-color);
+
+}
+
+.inputCard-box label{
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary-color);
+}
+
+.inputCard-box input::placeholder{
+  color: var(--text-second-color);
+}
+
+select {
+  color: var(--text-second-color);
+
+}
+
+select:hover{
+  color: var(--text-primary-color);
+}
+

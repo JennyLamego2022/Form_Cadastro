@@ -35,19 +35,25 @@
     Header
 - [x] Imagem e bg;
 - [x] Botao troca de tema;
+- [ ] Função troca tema;
 
     Formulário
-- [ ] Titulo; 
-- [ ] Label/Input dados pessoais;
-- [ ] Label/Input dados residenciais (API CEP - TS);
+- [x] Titulo; 
+- [x] Label/Input dados pessoais;
+- [x] Label/Input dados residenciais (API CEP - TS);
 - [ ] Botão salvar (?)
+- [ ] Consumir API para o CEP;
+- [ ] Preencher campos, bairro, cidade e estado com API;
+- [ ] Criar Error, para preenchimento errado do formulário;
 
-    Cartão de Credito
-- [ ] Criação do layout;
-- [ ] Imagem e Bg;
-- [ ] Iamgem cartão (Editavel);
-- [ ] Label/Input informações cartão;
+    Cartão
+- [x] Criação do layout;
+- [x] Imagem e Bg;
+- [x] Iamgem cartão (Editavel);
+- [x] Label/Input informações cartão;
 - [ ] Botão confirma
+- [ ] Criar função de preenchimento automatico dos dados no layout do cartão;
+- 
 
 
 **Desktop**
@@ -55,7 +61,8 @@
 
 **Extra**
 
- - [ ]
+ - [ ] Corrigir data validade do Cartão (JS/TS);
+ - [ ] Validação do cartão
  
 ## Tecnologias
 

@@ -22,28 +22,36 @@
 
       <fieldset class="dadosPag">
         <p class="inputCard-box">
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" name="name" placeholder="Nome e Sobrenome" required>
+        </p>
+        <p class="inputCard-box">
           <label for="card">Bandeira do Cartão   </label>
-          <select name="usercard" id="card">
+          <select name="usercard" id="card" required>
             <option value="visa">Visa</option>
             <option value="mc">MasterCard</option>
             <option value="amex">American Express</option>
           </select>
-        <p>
+        </p>
+        <p class="inputCard-box">
           <label for="fCard">Função do Cartão   </label>
-          <select name="usercard" id="fCard">
+          <select name="usercard" id="fCard" required>
             <option value="debito">Débito</option>
             <option value="credito">Crédito</option>
-
           </select>
         </p>
-        <p>
+        <p class="inputCard-box">
           <label for="number">Número do Cartão</label>
-          <input type="number" id="number" name="cardnumber">
+          <input type="number" id="number" name="cardnumber" placeholder="0000 0000 0000 0000" required>
         </p>
-        <p>
+        <p class="inputCard-box">
+          <label for="CVC">CVC</label>
+          <input type="number" id="CVC" name="cardnumber" placeholder="123" required>
+        </p>
+        <p class="inputCard-box">
           <label for="date">Data de Expiração</label>
-          <em>formatted as mm/yyyy</em>
-          <input type="date" id="date" name="expiration">
+          <em></em>
+          <input type="date" id="date" name="expiration" required>
         </p>
       </fieldset>
 
