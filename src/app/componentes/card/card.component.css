@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  --body-bg-color: hsl(0, 6%, 90%);
+  --body-bgForm-color: rgb(250, 250, 250);
+  --input-api-color: hsl(0, 0%, 89%);
+  --body-moderate-color: hsl(176, 50%, 47%);
+  --body-dark-color: hsl(176, 72%, 28%);
+  --bg-gradient-color: linear-gradient(45deg, hsl(176, 50%, 47%), hsl(176, 72%, 28%) );
+
+  --text-primary-color: hsl(0, 0%, 0%);
+  --text-second-color: hsl(0, 0%, 48%);
+  --text-special-color: white;
+}
+
+.container{
+  font-family: 'Commissioner', sans-serif;
+  width: 100%;
+  height:200vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg-color) ;
+
+}
+.title{
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-primary-color);
+  font-weight: 600;
+}
+
+.imgCard{
+  background: rgb(2,0,36);
+  background: linear-gradient(228deg, rgba(2,0,36,1) 0%, rgba(60,180,172,1) 55%, rgba(20,123,116,1) 100%);
+  position:relative;
+}
+
+.back-card{
+
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  right: 0;
+}
+
+.front-card{
+  position: absolute;
+  width: 70%;
+  left: 0;
+  top: 7.1rem;
+  margin-left: 1rem;
+}
+
+#cvc{
+  width: 50px;
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  margin-right: 2.2rem;
+}
+
+.info-card{
+  position: absolute;
+  width: 260px;
+  height: 140px;
+  z-index: 1;
+  top: 7.5rem;
+  margin-left: 1rem;
+
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color:var(--text-special-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid red;
+}
+
+.input-box{
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.img-1{
+ text-align: start;
+}
+
+#img-1{
+
+  transform: scale(0.6);
+  align-items: flex-start;
+  text-align: start;
+}
+
+.number{
+  text-align: start;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.name-val{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputCard-box{
+  padding-top: 6rem;
+}
+
+.dadosPag{
+ margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1.5rem;
+
+  background-color: var(--body-bgForm-color);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #0003;
+}

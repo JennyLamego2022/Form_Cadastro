@@ -2,12 +2,26 @@
   <section class="pagamento">
     <form action="#">
       <h1 class="title">Dados de Pagamento</h1>
-      <fieldset class="dadosPag">
+
+      <fieldset class="dadosCard">
         <div class="imgCard">
-          <img src="../../../assets/img/bg-card-back.png" alt="Verso Cartão">
-          <img src="../../../assets/img/bg-card-front.png" alt="Frente Cartão">
+          <img class="back-card" src="../../../assets/img/bg-card-back.png" alt="Verso Cartão">
+          <div id="cvc">123</div>
+          <img class="front-card" src="../../../assets/img/bg-card-front.png" alt="Frente Cartão">
+
+          <div class="info-card">
+            <div class="img-1"><img id="img-1" src="../../../assets/img/card-logo.svg"></div>
+            <div class="number input-box">0000 0000 0000 0000</div>
+            <div class="name-val">
+              <div class="name input-box">Jennyfer Lamego</div>
+              <div class="val input-box">09/28</div>
+            </div>
+          </div>
         </div>
-        <p>
+      </fieldset>
+
+      <fieldset class="dadosPag">
+        <p class="inputCard-box">
           <label for="card">Bandeira do Cartão   </label>
           <select name="usercard" id="card">
             <option value="visa">Visa</option>

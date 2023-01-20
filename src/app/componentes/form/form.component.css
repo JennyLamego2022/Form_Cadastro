@@ -20,11 +20,9 @@
   --body-moderate-color: hsl(176, 50%, 47%);
   --body-dark-color: hsl(176, 72%, 28%);
 
-
-
---text-primary-color: hsl(0, 0%, 0%);
---text-second-color: hsl(0, 0%, 48%);
---text-special-color: white;
+  --text-primary-color: hsl(0, 0%, 0%);
+  --text-second-color: hsl(0, 0%, 48%);
+  --text-special-color: white;
 }
 
 .container{
