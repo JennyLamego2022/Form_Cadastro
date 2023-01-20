@@ -51,7 +51,7 @@
 - [x] Imagem e Bg;
 - [x] Iamgem cartão (Editavel);
 - [x] Label/Input informações cartão;
-- [ ] Botão confirma
+- [x] Botão confirma
 - [ ] Criar função de preenchimento automatico dos dados no layout do cartão;
 - 
 
@@ -70,7 +70,7 @@
  
 Hospedagem:
 
-Em breve, hospedagem no Vercel.
+Vercel: https://form-cadastro-gilt.vercel.app/
 
 
  ## Clonagem

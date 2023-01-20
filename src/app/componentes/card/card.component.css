@@ -34,7 +34,7 @@
   background: rgb(2,0,36);
   background: linear-gradient(228deg, rgba(2,0,36,1) 0%, rgba(60,180,172,1) 55%, rgba(20,123,116,1) 100%);
   position:relative;
-  height: 300px;
+  height: 315px;
 }
 
 .back-card{
@@ -127,7 +127,7 @@
   border-radius: 8px;
   box-shadow: 2px 2px 5px #0003;
   position: absolute;
-  top: 1365px;
+  top: 1376px;
   left: 0;
   right: 0;
 }
