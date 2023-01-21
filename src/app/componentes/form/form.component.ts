@@ -32,7 +32,7 @@ export class FormComponent implements OnInit {
             this.bairro = data.bairro;
             this.uf = data.uf;
 
-
+            console.log(this.cepService)
             console.log(this.bairro);
           });
 

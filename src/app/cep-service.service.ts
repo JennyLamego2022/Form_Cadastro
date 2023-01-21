@@ -10,7 +10,7 @@ interface Cep {
     localidade: string;
     bairro: string;
     uf: string;
-   
+
 }
 
 
@@ -25,6 +25,7 @@ export class CepServiceService {
 
   getCEP( cep: Cep): Observable<Cep>{
     return this.httpCliente.get<Cep>(`https://viacep.com.br/ws/${cep}/json/`);
+  
   }
 
   // buscar(cep:string){
