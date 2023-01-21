@@ -16,6 +16,7 @@ export class FormComponent implements OnInit {
       ddd: any;
 
 
+      
       constructor(private cepService: CepServiceService){}
 
       ngOnInit(): void {
@@ -42,6 +43,10 @@ export class FormComponent implements OnInit {
         this.consultaCep();
 
         console.log(this.consultaCep);
+      }
+
+      cadastroDados(){
+        alert("Cadastrado")
       }
 
 }

@@ -42,8 +42,8 @@
 - [x] Label/Input dados pessoais;
 - [x] Label/Input dados residenciais (API CEP - TS);
 - [x] Botão salvar (?)
-- [ ] Consumir API para o CEP;
-- [ ] Preencher campos, bairro, cidade e estado com API;
+- [x] Consumir API para o CEP;
+- [x] Preencher campos, bairro, cidade e estado com API;
 - [ ] Criar Error, para preenchimento errado do formulário;
 
     Cartão

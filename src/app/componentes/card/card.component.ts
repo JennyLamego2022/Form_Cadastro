@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
+  dadosCartao = {
+
+    numero: '',
+    cvc: '',
+    nome: '',
+    validade: ''
+  }
+
 }
