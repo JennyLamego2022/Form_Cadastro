@@ -194,3 +194,15 @@ background-color: var(--body-moderate-color);
   font-weight: 500;
   color: var(--text-special-color)
 }
+
+
+@media (min-width:414px) {
+
+  #cvc{
+
+    top: 6.5rem;
+    margin-right: 2.2rem;
+
+  }
+}
+
