@@ -5,17 +5,20 @@
 
       <fieldset class="dadosCard">
         <div class="imgCard">
-          <img class="back-card" src="../../../assets/img/bg-card-back.png" alt="Verso Cartão">
-          <div id="cvc"> {{ dadosCartao.cvc }} </div>
-          <img class="front-card" src="../../../assets/img/bg-card-front.png" alt="Frente Cartão">
+          <!-- <img class="back-card" src="../../../assets/img/bg-card-back.png" alt="Verso Cartão"> -->
+          <div id="cvc"><span id="cvc1"> {{ dadosCartao.cvc }}</span><img class="back-card" src="../../../assets/img/bg-card-back.png" alt="Verso Cartão"></div>
+          <!-- <img class="front-card" src="../../../assets/img/bg-card-front.png" alt="Frente Cartão"> -->
 
-          <div class="info-card">
-            <div class="img-1"><img id="img-1" src="../../../assets/img/card-logo.svg"></div>
-            <div class="number input-box">{{ dadosCartao.numero }}</div>
-            <div class="name-val">
-              <div class="name input-box"> {{ dadosCartao.nome }}</div>
-              <div class="val input-box">{{ dadosCartao.validade }}</div>
+          <div class="info-card"><img class="front-card" src="../../../assets/img/bg-card-front.png" alt="Frente Cartão">
+            <div class="infCard">
+              <div class="img-1"><img id="img-1" src="../../../assets/img/card-logo.svg"></div>
+              <div class="number input-box">{{ dadosCartao.numero }}</div>
+              <div class="name-val">
+                <div class="name input-box"> {{ dadosCartao.nome }}</div>
+                <div class="val input-box">{{ dadosCartao.validade }}</div>
+              </div>
             </div>
+
           </div>
         </div>
       </fieldset>
