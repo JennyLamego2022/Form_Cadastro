@@ -52,8 +52,8 @@
 - [x] Iamgem cartão (Editavel);
 - [x] Label/Input informações cartão;
 - [x] Botão confirma
-- [ ] Criar função de preenchimento automatico dos dados no layout do cartão;
-- 
+- [x] Criar função de preenchimento automatico dos dados no layout do cartão;
+ 
 
 
 **Desktop**
