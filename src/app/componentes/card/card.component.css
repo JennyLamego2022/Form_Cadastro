@@ -189,8 +189,13 @@ select:hover{
   color: var(--text-primary-color);
 }
 
+.submit{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .submit button{
-  width: 100%;
+  width: 45%;
   margin-right: auto;
   margin-top: 2rem;
   border:none;
