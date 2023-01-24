@@ -54,7 +54,7 @@
 - [x] Label/Input informações cartão;
 - [x] Botão confirma
 - [x] Criar função de preenchimento automatico dos dados no layout do cartão;
-- [ ] Add componente extra para confirmar e exibir dados cadastrados (?)
+- [x] Add componente extra para confirmar e exibir dados cadastrados (?)
  
 
 
