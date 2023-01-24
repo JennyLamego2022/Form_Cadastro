@@ -20,7 +20,8 @@ import { CadastroComponent } from './componentes/cadastro/cadastro.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CadastroService } from '../cadastro.service';
+import { Cadastro } from './cadastro';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,10 +9,18 @@ import { Component } from '@angular/core';
 })
 export class CadastroComponent {
 
-  cadastro = {
+  @Input() cadastro: Cadastro = {
     nome: 'Jennyfer',
     endereco: 'Rua Olimpia do Couto',
     funcao: 'debito'
+  };
+
+  constructor(private service: CadastroService ) {}
+
+  ngOnInit(): void{
+    this.service.listar().subscribe((Cadastro) => {
+      this.cadastro
+    })
   }
 
 }
