@@ -45,6 +45,7 @@
 - [x] Consumir API para o CEP;
 - [x] Preencher campos, bairro, cidade e estado com API;
 - [ ] Criar Error, para preenchimento errado do formulário;
+- [x] Rotas e RouterLink para a troca de telas;
 
     Cartão
 - [x] Criação do layout;
@@ -53,16 +54,18 @@
 - [x] Label/Input informações cartão;
 - [x] Botão confirma
 - [x] Criar função de preenchimento automatico dos dados no layout do cartão;
+- [ ] Add componente extra para confirmar e exibir dados cadastrados (?)
  
 
 
 **Desktop**
-
+- [ ] Reponsividade
 
 **Extra**
 
  - [ ] Corrigir data validade do Cartão (JS/TS);
- - [ ] Validação do cartão
+ - [ ] Validação do cartão;
+ - [ ] Padrão do numero d0 cartão 0000 0000 0000 0000;
  
 ## Tecnologias
 

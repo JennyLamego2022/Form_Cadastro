@@ -1,7 +1,28 @@
-import { NgModule } from '@angular/core';
+import { CadastroComponent } from './componentes/cadastro/cadastro.component';
+import { CardComponent } from './componentes/card/card.component';
+import { FormComponent } from './componentes/form/form.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'form',
+    pathMatch: 'full'
+  },
+  {
+    path: 'form',
+    component: FormComponent
+  },
+  {
+    path: 'card',
+    component: CardComponent
+  },
+  {
+    path: 'cadastro',
+    component: CadastroComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './componentes/form/form.component';
 import { CardComponent } from './componentes/card/card.component';
+import { CadastroComponent } from './componentes/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    CardComponent
+    CardComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

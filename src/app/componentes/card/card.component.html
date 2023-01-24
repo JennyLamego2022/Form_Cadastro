@@ -46,20 +46,22 @@
         </p>
         <p class="inputCard-box">
           <label for="number">Número do Cartão</label>
-          <input type="number" id="number" name="cardnumber" placeholder="0000 0000 0000 0000" required [(ngModel)]="dadosCartao.numero">
+          <input type="number" id="text" name="cardnumber" placeholder="0000 0000 0000 0000" required [(ngModel)]="dadosCartao.numero" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "16">
         </p>
         <p class="inputCard-box">
           <label for="CVC">CVC</label>
-          <input type="number" id="CVC" name="cardnumber"  placeholder="123" required [(ngModel)]="dadosCartao.cvc">
+          <input type="number" id="CVC" name="cardnumber" size=3 placeholder="123" required [(ngModel)]="dadosCartao.cvc"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3">
         </p>
         <p class="inputCard-box">
           <label for="date">Data de Expiração</label>
           <!-- <em></em> -->
-          <input type="date" id="date" name="expiration" required [(ngModel)]="dadosCartao.validade">
+          <input type="date" id="date" name="expiration"  required [(ngModel)]="dadosCartao.validade">
+
         </p>
 
         <p class="submit">
           <button type="submit"><a href="#">Confirma</a></button>
+          <button type="submit"><a routerLink="/form" href="#">Cancelar</a></button>
         </p>
       </fieldset>
 
