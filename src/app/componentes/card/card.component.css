@@ -20,7 +20,7 @@
 .container{
   font-family: 'Commissioner', sans-serif;
   width: 100%;
-  height:922px;
+  height:843px;
   justify-content: center;
   align-items: center;
   background-color: var(--body-bg-color) ;
@@ -192,7 +192,7 @@ select:hover{
 .submit{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .submit button{
   width: 45%;
