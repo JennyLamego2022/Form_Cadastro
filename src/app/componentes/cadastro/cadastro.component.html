@@ -5,10 +5,10 @@
     <div class="dadosPessoais">
       <h2 class="title">Dados Pessoais</h2>
       <p class="nome"><b>Nome:</b> {{ cadastro.nome }}</p>
-      <p class="email"><b>E-mail:</b></p>
-      <p class="tel"><b>Tel:</b></p>
-      <p class="cep"><b>Cep:</b></p>
-      <p class="endereço"><b>Endereço:</b>  {{ cadastro.endereco }} n: ,..., Bairro: , Cidade, UF</p>
+      <p class="email"><b>E-mail:</b> {{ cadastro.email }}</p>
+      <p class="tel"><b>Tel:</b> {{ cadastro.tel }}</p>
+      <p class="cep"><b>Cep: {{cadastro.cep}}}</b></p>
+      <p class="endereço"><b>Endereço:</b>{{ cadastro.endereco }} n: {{cadastro.numero}}, {{cadastro.complemento}}, Bairro: , Cidade, UF</p>
     </div>
 
      <div class="dadosPagamento">

@@ -1,5 +1,9 @@
+
+import { Cadastro } from './../cadastro/cadastro';
+import { CadastroService } from './../cadastro.service';
 import { CepServiceService } from './../../cep-service.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -15,9 +19,25 @@ export class FormComponent implements OnInit {
       uf: any;
       ddd: any;
 
+      cadastro: Cadastro = {
+        nome: '',
+        email:'',
+        tel:'',
+        cep: '',
+        endereco: '',
+        numero: '',
+        complemento: '',
+        bairro: '',
+        cidade: '',
+        uf: '',
+        funcao: '',
+        logradouro: ''
+      };
 
-      
-      constructor(private cepService: CepServiceService){}
+      constructor(
+        private cepService: CepServiceService,
+        private service: CadastroService
+        ){}
 
       ngOnInit(): void {
 
@@ -46,7 +66,10 @@ export class FormComponent implements OnInit {
       }
 
       cadastroDados(){
-        alert("Cadastrado")
+        this.service.criar(this.cadastro).subscribe()
+        // alert("to funcionando")
+        console.log(this.cadastro)
       }
 
 }
+

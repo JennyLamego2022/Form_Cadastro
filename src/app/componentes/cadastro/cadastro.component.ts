@@ -10,16 +10,25 @@ import { Cadastro } from './cadastro';
 export class CadastroComponent {
 
   @Input() cadastro: Cadastro = {
-    nome: 'Jennyfer',
+    nome: 'Cadu',
+    email: '',
+    tel: '',
+    cep: '',
     endereco: 'Rua Olimpia do Couto',
-    funcao: 'debito'
+    numero: '',
+    complemento: '',
+    bairro: '',
+    cidade: '',
+    uf: '',
+    funcao: 'debito',
+    logradouro: ''
   };
 
   constructor(private service: CadastroService ) {}
 
   ngOnInit(): void{
     this.service.listar().subscribe((Cadastro) => {
-      this.cadastro
+      this.cadastro = Cadastro
     })
   }
 

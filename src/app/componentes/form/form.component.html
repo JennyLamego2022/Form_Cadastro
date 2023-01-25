@@ -22,17 +22,17 @@
           <legend class="pessoais">Dados Pessoais</legend>
           <p class="input-box">
             <label for="name">Nome completo</label>
-            <input type="text" id="name" name="name" placeholder="Nome e Sobrenome" required>
+            <input type="text" id="name" name="name" placeholder="Nome e Sobrenome" required [(ngModel)]="cadastro.nome">
           </p>
 
           <p class="input-box">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required [(ngModel)]="cadastro.email">
           </p>
 
           <p class="input-box">
             <label for="tel">Celular</label>
-            <input type="number" id="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+            <input type="number" id="tel" name="number" placeholder="(xx) xxxx-xxxx" required [(ngModel)]="cadastro.tel">
           </p>
         </fieldset>
 
@@ -43,7 +43,7 @@
           </p>
           <p class="input-box">
             <label for="adress">Endereço</label>
-            <input type="text" id="adress" name="adress" ngModel [(ngModel)]="logradouro" placeholder="" required>
+            <input type="text" id="adress" name="adress" ngModel [(ngModel)]="logradouro" [(ngModel)]="cadastro.endereco" required >
           </p>
           <p class="input-box">
             <label for="number">Número da residência</label>
@@ -51,7 +51,7 @@
           </p>
           <p class="input-box">
             <label for="complemento">Complemento (opcional)</label>
-            <input type="text" id="complemento" name="complemento" placeholder="Apto, sala, conjunto, etc.">
+            <input type="text" id="complemento" name="complemento" placeholder="Apto, sala, conjunto, etc." [(ngModel)]="cadastro.complemento">
           </p>
           <p class="input-box API">
             <label for="district">Bairro</label>

@@ -16,4 +16,8 @@ export class CadastroService {
     return this.http.get<Cadastro>(this.API)
   }
 
+  criar(cadastro: Cadastro): Observable<Cadastro>{
+    return this.http.post<Cadastro>(this.API, cadastro)
+  }
+
 }
