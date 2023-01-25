@@ -3,6 +3,7 @@ import { Cadastro } from './../cadastro/cadastro';
 import { CadastroService } from './../cadastro.service';
 import { CepServiceService } from './../../cep-service.service';
 import { Component, Input, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 
 
@@ -36,7 +37,8 @@ export class FormComponent implements OnInit {
 
       constructor(
         private cepService: CepServiceService,
-        private service: CadastroService
+        private service: CadastroService,
+        private router: Router
         ){}
 
       ngOnInit(): void {
@@ -66,7 +68,9 @@ export class FormComponent implements OnInit {
       }
 
       cadastroDados(){
-        this.service.criar(this.cadastro).subscribe()
+        this.service.criar(this.cadastro).subscribe(() => {
+          this.router.navigate(['/card'])
+        })
         // alert("to funcionando")
         console.log(this.cadastro)
       }
