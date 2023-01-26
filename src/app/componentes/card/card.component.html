@@ -14,7 +14,7 @@
               <div class="img-1"><img id="img-1" src="../../../assets/img/card-logo.svg"></div>
               <div class="number input-box">{{ dadosCartao.numero }}</div>
               <div class="name-val">
-                <div class="name input-box"> {{ dadosCartao.nome }}</div>
+                <div class="name input-box"> {{ dadosCartao.nomeCard }}</div>
                 <div class="val input-box">{{ dadosCartao.validade }}</div>
               </div>
             </div>
@@ -27,7 +27,7 @@
         <h1 class="title">Dados de Pagamento</h1>
         <p class="inputCard-box">
           <label for="name">Nome completo</label>
-          <input type="text" id="name" name="name" placeholder="Nome e Sobrenome" required [(ngModel)]="dadosCartao.nome">
+          <input type="text" id="name" name="name" placeholder="Nome e Sobrenome" required [(ngModel)]="dadosCartao.nomeCard">
         </p>
         <p class="inputCard-box">
           <label for="card">Bandeira do Cartão   </label>
@@ -39,7 +39,7 @@
         </p>
         <p class="inputCard-box">
           <label for="fCard">Função do Cartão   </label>
-          <select name="usercard" id="fCard" required>
+          <select name="usercard" id="fCard" required [(ngModel)]="cadastro.bandeira">
             <option value="debito">Débito</option>
             <option value="credito">Crédito</option>
           </select>
@@ -61,7 +61,7 @@
 
         <p class="submit">
           <button routerLink="/form" type="submit"><a  href="#">Cancelar</a></button>
-          <button type="submit"><a routerLink="/cadastro" href="#">Confirma</a></button>
+          <button type="submit" (click)="cadastroDadosCard()">Confirma</button>
 
         </p>
       </fieldset>

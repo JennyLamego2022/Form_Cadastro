@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './componentes/form/form.component';
 import { CardComponent } from './componentes/card/card.component';
 import { CadastroComponent } from './componentes/cadastro/cadastro.component';
+import { EditarCadastroComponent } from './componentes/editar-cadastro/editar-cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     CardComponent,
-    CadastroComponent
+    CadastroComponent,
+    EditarCadastroComponent
   ],
   imports: [
     BrowserModule,

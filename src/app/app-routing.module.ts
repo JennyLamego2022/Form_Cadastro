@@ -3,6 +3,7 @@ import { CardComponent } from './componentes/card/card.component';
 import { FormComponent } from './componentes/form/form.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditarCadastroComponent } from './componentes/editar-cadastro/editar-cadastro.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'cadastro',
     component: CadastroComponent
+  },
+  {
+    path: 'editarCadastro',
+    component: EditarCadastroComponent
   }
 ];
 

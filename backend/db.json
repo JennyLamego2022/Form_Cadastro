@@ -2,15 +2,25 @@
   "cadastro": {
     "nome": "Jennyfer Lamego",
     "email": "jennylamego@hotmail.com",
-    "tel": 53853357,
+    "tel": "",
     "cep": "",
     "endereco": "Rua Mamanguape",
-    "numero": "",
+    "numero": 546,
     "complemento": "546",
     "bairro": "",
     "cidade": "",
     "uf": "",
     "funcao": "",
-    "logradouro": ""
+    "logradouro": "",
+    "nomeCard": "",
+    "bandeira": "",
+    "cvc": "",
+    "validade": ""
+  },
+  "dadosCartao": {
+    "numero": "",
+    "cvc": "",
+    "nomeCard": "Luiza",
+    "validade": ""
   }
 }

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CadastroService } from '../cadastro.service';
-import { Cadastro } from './cadastro';
+import { Cadastro, dadosCartao } from './cadastro';
 
 @Component({
   selector: 'app-cadastro',
@@ -21,8 +21,19 @@ export class CadastroComponent {
     cidade: '',
     uf: '',
     funcao: 'debito',
-    logradouro: ''
+    logradouro: '',
+    nomeCard: '',
+    bandeira: '',
+    cvc: '',
+    validade: ''
   };
+
+  @Input() dadosCartao: dadosCartao = {
+    numero: '',
+    cvc: '',
+    nomeCard: '',
+    validade: ''
+  }
 
   constructor(private service: CadastroService ) {}
 

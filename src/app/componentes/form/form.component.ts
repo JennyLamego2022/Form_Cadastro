@@ -22,8 +22,8 @@ export class FormComponent implements OnInit {
 
       cadastro: Cadastro = {
         nome: '',
-        email:'',
-        tel:'',
+        email: '',
+        tel: '',
         cep: '',
         endereco: '',
         numero: '',
@@ -32,7 +32,11 @@ export class FormComponent implements OnInit {
         cidade: '',
         uf: '',
         funcao: '',
-        logradouro: ''
+        logradouro: '',
+        nomeCard: '',
+        bandeira: '',
+        cvc: '',
+        validade: ''
       };
 
       constructor(

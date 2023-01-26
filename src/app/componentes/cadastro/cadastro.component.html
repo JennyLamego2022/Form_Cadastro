@@ -13,15 +13,15 @@
 
      <div class="dadosPagamento">
       <h2 class="title">Dados de Pagamento</h2>
-      <p class="nomeCard"><b>Nome no Cartão:</b></p>
-      <p class="bandeira"><b>Bandeira:</b></p>
+      <p class="nomeCard"><b>Nome no Cartão: {{ cadastro.nome }}</b></p>
+      <p class="bandeira"><b>Bandeira: {{cadastro.bandeira}} </b></p>
       <p class="funcao"><b>Função do Cartão:</b> {{ cadastro.funcao }}</p>
-      <p class="cvc"><b>CVC:</b></p>
-      <p class="validade"><b>Validade:</b></p>
+      <p class="cvc"><b>CVC: {{cadastro.cvc}} </b></p>
+      <p class="validade"><b>Validade: {{cadastro.validade}} </b></p>
     </div>
 
     <div class="acoes">
-      <button class="editar"> <a routerLink="/form" href="">Editar</a></button>
+      <button class="editar" routerLink="/form">Editar</button>
       <button class="confirmar"><a href="">Confirmar</a></button>
     </div>
   </fieldset>
