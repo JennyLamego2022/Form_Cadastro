@@ -21,6 +21,7 @@ export class FormComponent implements OnInit {
       ddd: any;
 
       cadastro: Cadastro = {
+        id: 0,
         nome: '',
         email: '',
         tel: '',

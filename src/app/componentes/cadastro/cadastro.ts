@@ -1,4 +1,5 @@
 export interface Cadastro {
+  id: number
   nome: string
   email: string
   tel: string
@@ -19,7 +20,8 @@ export interface Cadastro {
 }
 
 export interface dadosCartao {
-   numero: string
+  
+  numero: string
     cvc: string
     nomeCard: string
     validade: string

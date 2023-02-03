@@ -9,6 +9,8 @@ import { FormComponent } from './componentes/form/form.component';
 import { CardComponent } from './componentes/card/card.component';
 import { CadastroComponent } from './componentes/cadastro/cadastro.component';
 import { EditarCadastroComponent } from './componentes/editar-cadastro/editar-cadastro.component';
+import { ExcluirCadastroComponent } from './componentes/excluir-cadastro/excluir-cadastro.component';
+import { ListarCadastroComponent } from './componentes/listar-cadastro/listar-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { EditarCadastroComponent } from './componentes/editar-cadastro/editar-ca
     FormComponent,
     CardComponent,
     CadastroComponent,
-    EditarCadastroComponent
+    EditarCadastroComponent,
+    ExcluirCadastroComponent,
+    ListarCadastroComponent
   ],
   imports: [
     BrowserModule,

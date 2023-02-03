@@ -10,6 +10,7 @@ import { Cadastro, dadosCartao } from './cadastro';
 export class CadastroComponent {
 
   @Input() cadastro: Cadastro = {
+    id:0,
     nome: 'Cadu',
     email: '',
     tel: '',

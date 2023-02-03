@@ -20,6 +20,7 @@ export class CardComponent implements OnInit {
   }
 
   cadastro: Cadastro = {
+    id: 0,
     nome: '',
     email: '',
     tel: '',

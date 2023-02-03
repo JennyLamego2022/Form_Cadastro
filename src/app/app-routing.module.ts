@@ -4,6 +4,7 @@ import { FormComponent } from './componentes/form/form.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EditarCadastroComponent } from './componentes/editar-cadastro/editar-cadastro.component';
+import { ExcluirCadastroComponent } from './componentes/excluir-cadastro/excluir-cadastro.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'editarCadastro',
     component: EditarCadastroComponent
+  },
+  {
+    path: 'excluirCadastro/id',
+    component: ExcluirCadastroComponent
   }
 ];
 

@@ -29,11 +29,17 @@ export class CadastroService {
     return this.http.post<dadosCartao>(this.API2, dadosCartao)
   }
 
-  buscarCadastro(): Observable<Cadastro>{
-
-    return this.http.get<Cadastro>(this.API)
+  excluir(id:number): Observable<Cadastro>{
+    const url = `${this.API}/${id}`
+    return this.http.delete<Cadastro>(url)
   }
-  buscarCadastroCard(): Observable<dadosCartao>{
+
+  buscarCadastro(id:number): Observable<Cadastro>{
+    const url = `${this.API}/${id}`
+    return this.http.get<Cadastro>(url)
+  }
+
+  buscarCadastroCard(nome:string): Observable<dadosCartao>{
 
     return this.http.get<dadosCartao>(this.API2)
   }

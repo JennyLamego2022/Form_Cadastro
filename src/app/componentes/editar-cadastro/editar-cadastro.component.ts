@@ -21,6 +21,7 @@ export class EditarCadastroComponent {
 
 
 cadastro: Cadastro = {
+  id: 0,
   nome: '',
   email: '',
   tel: '',
@@ -48,7 +49,8 @@ constructor(
 }
 
 ngOnInit(): void {
-  this.service.editar(this.cadastro).subscribe((cadastro) => {
+  const id = this.route.snapshot.paramMap.get('nome')
+  this.service.buscarCadastro(parseInt(id!)).subscribe((cadastro) => {
     this.cadastro = cadastro
   })
 }
