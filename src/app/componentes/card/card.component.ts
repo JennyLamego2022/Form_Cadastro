@@ -47,12 +47,12 @@ export class CardComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
   cadastroDadosCard(){
     this.service.criarPG(this.dadosCartao).subscribe(() => {
-      this.router.navigate(['/cadastro'])
+      this.router.navigate(['/listarCadastro'])
     })
     console.log(this.cadastro)
     console.log(this.dadosCartao)

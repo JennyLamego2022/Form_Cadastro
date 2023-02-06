@@ -12,7 +12,7 @@ import { Route, Router } from '@angular/router';
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormComponent implements OnInit{
       cep: any;
       logradouro: any;
       localidade: any;
@@ -48,7 +48,7 @@ export class FormComponent implements OnInit {
 
       ngOnInit(): void {
 
-        throw new Error('Method not implemented.');
+
       }
 
 
@@ -74,7 +74,7 @@ export class FormComponent implements OnInit {
 
       cadastroDados(){
         this.service.criar(this.cadastro).subscribe(() => {
-          this.router.navigate(['/card'])
+          this.router.navigate(['/listarCadastro'])
         })
         // alert("to funcionando")
         console.log(this.cadastro)

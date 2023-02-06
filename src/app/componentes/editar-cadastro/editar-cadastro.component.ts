@@ -2,14 +2,14 @@ import { CepServiceService } from './../../cep-service.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CadastroService } from './../cadastro.service';
 import { Cadastro } from './../cadastro/cadastro';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-editar-cadastro',
   templateUrl: './editar-cadastro.component.html',
   styleUrls: ['./editar-cadastro.component.css']
 })
-export class EditarCadastroComponent {
+export class EditarCadastroComponent implements OnInit{
   [x: string]: any;
 
   cep: any;

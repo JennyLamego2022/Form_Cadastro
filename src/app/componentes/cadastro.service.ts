@@ -13,8 +13,12 @@ export class CadastroService {
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable<Cadastro> {
-    return this.http.get<Cadastro>(this.API)
+  // listar(): Observable<Cadastro []> {
+  //   return this.http.get<Cadastro[]>(this.API)
+  // }
+
+  listar() : Observable<Cadastro[]> {
+    return this.http.get<Cadastro[]>(this.API)
   }
 
   editar(cadastro: Cadastro): Observable<Cadastro>{
@@ -43,5 +47,7 @@ export class CadastroService {
 
     return this.http.get<dadosCartao>(this.API2)
   }
+
+
 
 }
