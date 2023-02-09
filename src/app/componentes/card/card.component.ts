@@ -47,12 +47,12 @@ export class CardComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    
+
   }
 
   cadastroDadosCard(){
     this.service.criarPG(this.dadosCartao).subscribe(() => {
-      this.router.navigate(['/listarCadastro'])
+      this.router.navigate(['/cadastro'])
     })
     console.log(this.cadastro)
     console.log(this.dadosCartao)

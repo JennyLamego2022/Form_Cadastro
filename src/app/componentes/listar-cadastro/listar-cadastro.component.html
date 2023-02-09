@@ -1,22 +1,22 @@
-<section class="container">
+<!-- <section class="container">
   <header class="header">
     <h2 class="class">Dados Cadastrados</h2>
     <button  class="botao" routerLink="/form">Inserir dados</button>
   </header>
-  <div class="dadosCadastro lista" *ngIf="listaCadastro.length > 0, else semCadastro">
+  <div class="dadosCadastro lista">
     <div *ngFor="let cadastro of listaCadastro">
       <app-cadastro [cadastro]="cadastro"></app-cadastro>
     </div>
-  </div>
+  </div> -->
   <!-- <div class="dadosCadastro" *ngIf="listaCadastro.length > 0, else semCadastro">
     <div *ngFor="let cadastro of listaCadastro">
       <app-cadastro [cadastro]="cadastro"></app-cadastro>
     </div>
   </div> -->
-</section>
+<!-- </section> -->
 
-<ng-template #semCadastro>
+<!-- <ng-template #semCadastro>
   <div class="sem-cadastro">
     <p>Sem dados cadastrados!</p>
   </div>
-</ng-template>
+</ng-template> -->

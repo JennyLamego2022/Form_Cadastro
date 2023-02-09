@@ -11,7 +11,7 @@ export class CadastroComponent implements OnInit{
 
   @Input() cadastro: Cadastro = {
     id:0,
-    nome: 'FILHO - cadastroComponent',
+    nome: '',
     email: '',
     tel: '',
     cep: '',

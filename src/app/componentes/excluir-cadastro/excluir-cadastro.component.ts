@@ -47,6 +47,7 @@ export class ExcluirCadastroComponent {
       if(this.cadastro.id){
         this.service.excluir(this.cadastro.id).subscribe(() => {
           this.router.navigate(['/form'])
+          console.log(this.cadastro.id)
         })
       }
     }

@@ -74,7 +74,7 @@ export class FormComponent implements OnInit{
 
       cadastroDados(){
         this.service.criar(this.cadastro).subscribe(() => {
-          this.router.navigate(['/listarCadastro'])
+          this.router.navigate(['/card'])
         })
         // alert("to funcionando")
         console.log(this.cadastro)
