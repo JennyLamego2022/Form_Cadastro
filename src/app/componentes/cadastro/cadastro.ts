@@ -27,12 +27,5 @@ export interface dadosCartao {
     cvc: string
     nomeCard: string
     validade: string
-};
-// export interface Cep {
-
-//   cep: number
-//   logradouro: string
-//   localidde: string
-//   bairro: string
-// };
+}
 

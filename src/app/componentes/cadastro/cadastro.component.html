@@ -1,4 +1,10 @@
 <div class=" container tLigth">
+  <div class="imgCard">
+    <div>
+      <h1 class="mural">Painel de Cadastro</h1>
+    </div>
+  </div>
+
   <fieldset class="dados-cadastrados">
     <h1>Confirmação de Dados</h1>
     <p class="orientacao">Agoras veja se estão todos os dados corretos, para poder concluir o seu cadastro.</p>
@@ -21,9 +27,17 @@
     </div>
 
     <div class="acoes">
-      <button class="editar" routerLink="/form"><a>Editar</a></button>
-      <button class="exclui" routerLink="/excluirCadastro/{{cadastro.id}}"><a>Excluir</a></button>
       <button class="confirmar"><a href="">Confirmar</a></button>
+
+      <div class="edicao">
+        <button class="editar" routerLink="/form">
+          <img id ="editar" src="../../../assets/img/edit_button.svg">
+        </button>
+        <button class="excluir" routerLink="/excluirCadastro/{{cadastro.id}}">
+          <img id = "excluir" src="../../../assets/img/delete_button.svg">
+        </button>
+      </div>
+
     </div>
   </fieldset>
 

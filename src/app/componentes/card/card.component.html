@@ -59,11 +59,25 @@
 
         </p>
 
-        <p class="submit">
+        <!-- <p class="submit">
           <button routerLink="/form" type="submit"><a  href="#">Cancelar</a></button>
           <button type="submit" (click)="cadastroDadosCard()"><a>Confirma</a></button>
 
-        </p>
+        </p> -->
+
+        <div class="acoes">
+          <button class="confirmar" type="submit" (click)="cadastroDadosCard()"><a>Confirmar</a></button>
+
+          <div class="edicao">
+            <!-- <button class="editar" routerLink="/form">
+              <img id ="editar" src="../../../assets/img/edit_button.svg">
+            </button> -->
+            <button class="excluir" routerLink="/excluirCadastro/{{cadastro.id}}">
+              <img id = "excluir" src="../../../assets/img/delete_button.svg">
+            </button>
+          </div>
+
+        </div>
       </fieldset>
 
 
