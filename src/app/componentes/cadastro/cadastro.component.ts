@@ -31,6 +31,8 @@ export class CadastroComponent implements OnInit{
 
   @Input() dadosCartao: dadosCartao = {
     numero: '',
+    funcao: '',
+    bandeira: '',
     cvc: '',
     nomeCard: '',
     validade: ''

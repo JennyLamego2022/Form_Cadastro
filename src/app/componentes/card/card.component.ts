@@ -14,6 +14,8 @@ export class CardComponent implements OnInit {
   dadosCartao: dadosCartao = {
 
     numero: '',
+    funcao: '',
+    bandeira: '',
     cvc: '',
     nomeCard: '',
     validade: ''

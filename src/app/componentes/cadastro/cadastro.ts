@@ -21,7 +21,9 @@ export interface Cadastro {
 
 export interface dadosCartao {
 
-  numero: string
+    numero: string
+    funcao:string
+    bandeira: string
     cvc: string
     nomeCard: string
     validade: string

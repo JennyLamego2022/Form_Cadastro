@@ -265,12 +265,33 @@
       "bandeira": "",
       "cvc": "",
       "validade": ""
+    },
+    {
+      "id": 14,
+      "nome": "",
+      "email": "",
+      "tel": "",
+      "cep": "",
+      "endereco": "",
+      "numero": "",
+      "complemento": "",
+      "bairro": "",
+      "cidade": "",
+      "uf": "",
+      "funcao": "",
+      "logradouro": "",
+      "nomeCard": "",
+      "bandeira": "",
+      "cvc": "",
+      "validade": ""
     }
   ],
   "dadosCartao": {
-    "numero": "",
-    "cvc": "",
-    "nomeCard": "",
-    "validade": ""
+    "numero": 5555555555555555,
+    "funcao": "credito",
+    "bandeira": "visa",
+    "cvc": 666,
+    "nomeCard": "Jennyfer Pereira Lamego Malheiros da Silveira",
+    "validade": "2023-02-01"
   }
 }

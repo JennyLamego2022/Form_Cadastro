@@ -31,15 +31,15 @@
         </p>
         <p class="inputCard-box">
           <label for="card">Bandeira do Cartão   </label>
-          <select name="usercard" id="card" required>
+          <select name="usercard" id="card" required [(ngModel)]="dadosCartao.bandeira">
             <option value="visa">Visa</option>
-            <option value="mc">MasterCard</option>
+            <option value="master">MasterCard</option>
             <option value="amex">American Express</option>
           </select>
         </p>
         <p class="inputCard-box">
           <label for="fCard">Função do Cartão   </label>
-          <select name="usercard" id="fCard" required [(ngModel)]="cadastro.bandeira">
+          <select name="usercard" id="fCard" required [(ngModel)]="dadosCartao.funcao">
             <option value="debito">Débito</option>
             <option value="credito">Crédito</option>
           </select>
