@@ -14,12 +14,20 @@ import { Route, Router } from '@angular/router';
 })
 export class FormComponent implements OnInit{
 
-      cep: any;
-      logradouro: any;
-      localidade: any;
-      bairro: any;
-      uf: any;
-      ddd: any;
+  // cep: Cep = {
+  //   cep: 0,
+  //   logradouro: '',
+  //   localidde: '',
+  //   bairro: ''
+
+  // }
+  cep: any;
+    logradouro: any;
+    localidade: any;
+    bairro: any;
+    uf: any;
+    ddd: any;
+
 
       cadastro: Cadastro = {
         id: 0,

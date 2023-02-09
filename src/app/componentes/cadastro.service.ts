@@ -7,6 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CadastroService {
+  getCep() {
+    throw new Error('Method not implemented.');
+  }
 
   private readonly API = 'http://localhost:3000/cadastro'
   private readonly API2 = 'http://localhost:3000/dadosCartao'

@@ -1,3 +1,4 @@
+import { CepServiceService } from './../../cep-service.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { CadastroService } from '../cadastro.service';
 import { Cadastro, dadosCartao } from './cadastro';
@@ -40,7 +41,13 @@ export class CadastroComponent implements OnInit{
 
 
 
-  constructor(private service: CadastroService) {}
+
+
+
+  constructor(
+    private service: CadastroService,
+    private cepService: CepServiceService
+    ) {}
 
   ngOnInit(): void{
     this.service.listar().subscribe((cadastro) => {
@@ -48,7 +55,11 @@ export class CadastroComponent implements OnInit{
     });
     this.service.listarPg().subscribe((dadosCartao) => {
       this.dadosCartao = dadosCartao
-    })
+    });
+    // this.cepService.getCEP(cep: Cep).subscribe((Cep) => {
+    //   this.cep = Cep
+    // })
+
 
   }
 

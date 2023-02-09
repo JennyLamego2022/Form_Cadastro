@@ -3,7 +3,7 @@
     "id": 0,
     "nome": "Jennyfer Pereira Lamego Malheiros da Silveira",
     "email": "jennyfer.lamego@gmail.com",
-    "tel": 21999999999,
+    "tel": 21980526172,
     "cep": "",
     "endereco": "Rua Mamanguape 546",
     "numero": 101,
@@ -19,11 +19,11 @@
     "validade": ""
   },
   "dadosCartao": {
-    "numero": 5555555555555555,
-    "funcao": "credito",
+    "numero": 1010202030304040,
+    "funcao": "debito",
     "bandeira": "master",
-    "cvc": 522,
-    "nomeCard": "Luiza",
-    "validade": "2023-02-02"
+    "cvc": 232,
+    "nomeCard": "Jennyfer Lamego",
+    "validade": "2023-02-16"
   }
 }
