@@ -17,8 +17,11 @@ export class CadastroService {
   //   return this.http.get<Cadastro[]>(this.API)
   // }
 
-  listar() : Observable<Cadastro[]> {
-    return this.http.get<Cadastro[]>(this.API)
+  listar() : Observable<Cadastro> {
+    return this.http.get<Cadastro>(this.API)
+  }
+  listarPg() : Observable<dadosCartao> {
+    return this.http.get<dadosCartao>(this.API2)
   }
 
   editar(cadastro: Cadastro): Observable<Cadastro>{

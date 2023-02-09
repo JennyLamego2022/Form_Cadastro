@@ -52,6 +52,7 @@ export class CardComponent implements OnInit {
 
   }
 
+  
   cadastroDadosCard(){
     this.service.criarPG(this.dadosCartao).subscribe(() => {
       this.router.navigate(['/cadastro'])

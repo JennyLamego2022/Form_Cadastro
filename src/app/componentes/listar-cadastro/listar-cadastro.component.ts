@@ -57,13 +57,13 @@ export class ListarCadastroComponent implements OnInit{
   }
 
   ngOninit(): void {
-    this.service.listar().subscribe((listaCadastro) => {
-      this.listaCadastro = listaCadastro
-    })
-    this.service.listar().subscribe((listaCadastro) => {
-      this.listaCadastro = listaCadastro
-      console.log('API')
-    })
+    // this.service.listar().subscribe((listaCadastro) => {
+    //   this.listaCadastro = listaCadastro
+    // })
+    // this.service.listar().subscribe((listaCadastro) => {
+    //   this.listaCadastro = listaCadastro
+    //   console.log('API')
+    // })
   }
 
 }

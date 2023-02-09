@@ -38,9 +38,17 @@ export class CadastroComponent implements OnInit{
     validade: ''
   }
 
-  constructor() {}
+
+
+  constructor(private service: CadastroService) {}
 
   ngOnInit(): void{
+    this.service.listar().subscribe((cadastro) => {
+      this.cadastro = cadastro
+    });
+    this.service.listarPg().subscribe((dadosCartao) => {
+      this.dadosCartao = dadosCartao
+    })
 
   }
 

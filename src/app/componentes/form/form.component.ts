@@ -13,6 +13,7 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit{
+
       cep: any;
       logradouro: any;
       localidade: any;
@@ -39,6 +40,7 @@ export class FormComponent implements OnInit{
         cvc: '',
         validade: ''
       };
+
 
       constructor(
         private cepService: CepServiceService,
@@ -78,6 +80,7 @@ export class FormComponent implements OnInit{
         })
         // alert("to funcionando")
         console.log(this.cadastro)
+        console.log(this.bairro)
       }
 
 }
