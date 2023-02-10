@@ -1,13 +1,13 @@
 {
   "cadastro": {
     "id": 0,
-    "nome": "Jennyfer Pereira Lamego Malheiros da Silveira",
-    "email": "jennyfer.lamego@gmail.com",
-    "tel": 21999999999,
+    "nome": "",
+    "email": "",
+    "tel": "",
     "cep": "",
-    "endereco": "Rua Mamanguape 546",
-    "numero": 101,
-    "complemento": "101",
+    "endereco": "",
+    "numero": "",
+    "complemento": "",
     "bairro": "",
     "cidade": "",
     "uf": "",
@@ -19,11 +19,11 @@
     "validade": ""
   },
   "dadosCartao": {
-    "numero": 999999999999999,
-    "funcao": "debito",
-    "bandeira": "master",
-    "cvc": 222,
-    "nomeCard": "Maria João",
-    "validade": "2023-02-10"
+    "numero": "",
+    "funcao": "",
+    "bandeira": "",
+    "cvc": "",
+    "nomeCard": "",
+    "validade": ""
   }
 }

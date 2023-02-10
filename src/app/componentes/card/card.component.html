@@ -32,16 +32,16 @@
         <p class="inputCard-box">
           <label for="card">Bandeira do Cartão   </label>
           <select name="usercard" id="card" required [(ngModel)]="dadosCartao.bandeira">
-            <option value="visa">Visa</option>
-            <option value="master">MasterCard</option>
-            <option value="amex">American Express</option>
+            <option id="options" value="visa">Visa</option>
+            <option id="options" value="master">MasterCard</option>
+            <option id="options" value="amex">American Express</option>
           </select>
         </p>
         <p class="inputCard-box">
           <label for="fCard">Função do Cartão   </label>
           <select name="usercard" id="fCard" required [(ngModel)]="dadosCartao.funcao">
-            <option value="debito">Débito</option>
-            <option value="credito">Crédito</option>
+            <option id="options" value="debito">Débito</option>
+            <option id="options" value="credito">Crédito</option>
           </select>
         </p>
         <p class="inputCard-box">
@@ -69,9 +69,9 @@
           <button class="confirmar" type="submit" (click)="cadastroDadosCard()"><a>Confirmar</a></button>
 
           <div class="edicao">
-            <!-- <button class="editar" routerLink="/form">
-              <img id ="editar" src="../../../assets/img/edit_button.svg">
-            </button> -->
+            <button class="editar" routerLink="/form">
+              <img id ="editar" src="../../../assets/img/undo_buttom.svg">
+            </button>
             <button class="excluir" routerLink="/excluirCadastro/{{cadastro.id}}">
               <img id = "excluir" src="../../../assets/img/delete_button.svg">
             </button>

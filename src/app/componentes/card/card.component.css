@@ -20,7 +20,7 @@
 .container{
   font-family: 'Commissioner', sans-serif;
   width: 100%;
-  height:900px;
+  height: calc(648px + 272px + 2rem);
   justify-content: center;
   align-items: center;
   background-color: var(--body-bg-color) ;
@@ -75,6 +75,7 @@
   text-align: center;
   color: var(--text-primary-color);
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .info-card{
@@ -159,6 +160,7 @@
   border: none;
   border-radius: 8px;
   box-shadow: 1px 1px 6px #0000001c;
+  font-size: 1rem;
 }
 
 .inputCard-box input:hover, #card:hover, #fCard:hover{
@@ -167,11 +169,15 @@
 
 .inputCard-box input:focus-visible, #card:focus-visible, #fCard:focus-visible{
   outline: 1px solid var(--body-bgForm-color);
+  font-size: 1rem;
+}
 
+#options{
+  font-size: 0.8rem;
 }
 
 .inputCard-box label{
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-primary-color);
 }
@@ -241,7 +247,7 @@ background-color: var(--body-moderate-color);
 
 .acoes button a{
   text-decoration: none;
-  font-size: 0.93rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-special-color)
 }
