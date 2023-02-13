@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarCadastroComponent implements OnInit{
 
-  listaCadastro : Cadastro [] = [
+  listaCadastro : Cadastro[] = [
     // {
     //   id:0,
     //   nome: '',

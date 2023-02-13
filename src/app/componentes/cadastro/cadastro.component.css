@@ -21,7 +21,7 @@
 .container{
   font-family: 'Commissioner', sans-serif;
   width: 100%;
-  height: calc(855px + 272px + 2rem);
+  height: calc(930px + 272px + 2rem);
   background-color: var(--body-bg-color) ;
 
 
