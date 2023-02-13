@@ -20,7 +20,7 @@
 .container{
   font-family: 'Commissioner', sans-serif;
   width: 100%;
-  height:1100px;
+  height:calc(1027px + 210px + 2rem);
   justify-content: center;
   align-items: center;
   background-color: var(--body-bg-color) ;
@@ -125,6 +125,7 @@
   text-align: center;
   color: var(--text-primary-color);
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .input-group{
@@ -146,6 +147,7 @@
   border: none;
   border-radius: 8px;
   box-shadow: 1px 1px 6px #0000001c;
+  font-size: 1rem;
 }
 
 .input-box input:hover{
@@ -158,7 +160,7 @@
 }
 
 .input-box label{
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-primary-color);
 }
@@ -201,14 +203,55 @@ background-color: var(--body-moderate-color);
   font-weight: 500;
   color: var(--text-special-color)
 }
-/* .formulario{
-  width: 90%;
-  height: auto;
+
+.acoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
 }
 
-.input-group{
-  flex-direction: column;
-  overflow-y: scroll;
-  flex-wrap: nowrap;
-} */
+.confirmar{
+  width: 70%;
+  margin-bottom: 2rem;
+  border:none;
+  background-color: var(--body-dark-color);
+  padding: 0.62rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
+.acoes button:hover{
+background-color: var(--body-moderate-color);
+}
+
+.acoes button a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-special-color)
+}
+
+.edicao{
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.2rem;
+  justify-content: flex-end;
+  width: 100%;
+
+}
+
+.editar, .excluir{
+ background-color: transparent;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 2px 2px 5px #0003;
+
+}
+
+#editar, #excluir{
+  width: 45%;
+  padding-top: 0.2rem;
+
+}

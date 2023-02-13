@@ -49,7 +49,7 @@ constructor(
 }
 
 ngOnInit(): void {
-  const id = this.route.snapshot.paramMap.get('nome')
+  const id = this.route.snapshot.paramMap.get('id')
   this.service.buscarCadastro(parseInt(id!)).subscribe((cadastro) => {
     this.cadastro = cadastro
   })
@@ -74,10 +74,13 @@ blur(event: any) {
   console.log(this.consultaCep);
 }
 
-editarDados(){
+editarCadastro(){
   this.service.editar(this.cadastro).subscribe(()=>{
     this.router.navigate(['/cadastro'])
   })
 }
 
+cancelar(){
+  this.router.navigate(['/cadastro'])
+}
 }

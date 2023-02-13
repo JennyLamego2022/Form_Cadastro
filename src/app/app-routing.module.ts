@@ -30,11 +30,11 @@ const routes: Routes = [
     component: ListarCadastroComponent
   },
   {
-    path: 'editarCadastro',
+    path: 'editarCadastro/:id',
     component: EditarCadastroComponent
   },
   {
-    path: 'excluirCadastro/id',
+    path: 'excluirCadastro/:id',
     component: ExcluirCadastroComponent
   }
 ];

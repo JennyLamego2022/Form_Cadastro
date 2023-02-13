@@ -28,7 +28,13 @@ export class CadastroService {
   }
 
   editar(cadastro: Cadastro): Observable<Cadastro>{
-    return this.http.put<Cadastro>(this.API, cadastro)
+    const url = `${this.API}/${cadastro.id}`
+    return this.http.put<Cadastro>(url, cadastro)
+  }
+
+  editarPG(dadosCartao: dadosCartao): Observable<dadosCartao>{
+    const url2 = `${this.API2}/${dadosCartao}`
+    return this.http.put<dadosCartao>(url2, dadosCartao)
   }
 
   criar(cadastro: Cadastro): Observable<Cadastro>{
@@ -50,7 +56,7 @@ export class CadastroService {
   }
 
   buscarCadastroCard(nome:string): Observable<dadosCartao>{
-
+    
     return this.http.get<dadosCartao>(this.API2)
   }
 
