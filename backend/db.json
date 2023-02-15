@@ -20,8 +20,8 @@
   },
   "dadosCartao": {
     "numero": "",
-    "funcao": "debito",
-    "bandeira": "master",
+    "funcao": "",
+    "bandeira": "",
     "cvc": "",
     "nomeCard": "Maria João",
     "validade": ""

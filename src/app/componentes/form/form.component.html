@@ -1,11 +1,11 @@
-<div class="container tLigth">
+<div class="container t-light">
   <section class="bg">
     <div class="nav">
       <h1 class="logo">Office Stuff</h1>
 
       <div class="toggle-mode">
         <span >Tema</span>
-        <input type="checkbox" class="btn-toggle">
+        <input type="checkbox" class="btn-toggle" (click) = "checkbox()">
       </div>
 
     </div>
@@ -76,7 +76,8 @@
             <!-- <button class="editar" routerLink="/form">
               <img id ="editar" src="../../../assets/img/edit_button.svg">
             </button> -->
-            <button  type="reset" class="excluir" routerLink="/excluirCadastro/{{cadastro.id}}">
+            <!-- <button  type="reset" class="excluir" routerLink="/excluirCadastro/{{cadastro.id}}"> -->
+            <button  type="reset" class="excluir">
               <img id = "excluir" src="../../../assets/img/delete_button.svg">
             </button>
           </div>

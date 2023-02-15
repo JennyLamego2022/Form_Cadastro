@@ -10,7 +10,7 @@ import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css','./mq.component.css']
 })
 export class FormComponent implements OnInit{
 
@@ -90,6 +90,13 @@ export class FormComponent implements OnInit{
         console.log(this.cadastro)
         console.log(this.bairro)
       }
+
+
+  // const checkbox = document.querySelector('.btn-toggle');
+
+  checkbox() {
+  document.body.classList.toggle('t-light');
+}
 
 }
 
