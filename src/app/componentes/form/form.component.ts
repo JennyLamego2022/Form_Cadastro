@@ -1,7 +1,7 @@
 
 import { Cadastro } from './../cadastro/cadastro';
 import { CadastroService } from './../cadastro.service';
-import { CepServiceService } from './../../cep-service.service';
+import { Cep, CepServiceService } from './../../cep-service.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 
@@ -14,19 +14,15 @@ import { Route, Router } from '@angular/router';
 })
 export class FormComponent implements OnInit{
 
-  // cep: Cep = {
-  //   cep: 0,
-  //   logradouro: '',
-  //   localidde: '',
-  //   bairro: ''
+  cep: Cep = {
+    cep: '',
+    logradouro: '',
+    localidade: '',
+    bairro: '',
+    uf:''
 
-  // }
-  cep: any;
-    logradouro: any;
-    localidade: any;
-    bairro: any;
-    uf: any;
-    ddd: any;
+  }
+
 
 
       cadastro: Cadastro = {
@@ -34,15 +30,16 @@ export class FormComponent implements OnInit{
         nome: '',
         email: '',
         tel: '',
-        cep: '',
-        endereco: '',
-        numero: '',
-        complemento: '',
-        bairro: '',
-        cidade: '',
-        uf: '',
+
+        endereco: {
+          ...this.cep,
+
+          cidade: '',
+          complemento: '',
+          numero: '',
+        },
+
         funcao: '',
-        logradouro: '',
         nomeCard: '',
         bandeira: '',
         cvc: '',
@@ -63,15 +60,15 @@ export class FormComponent implements OnInit{
 
 
       consultaCep() {
-          this.cepService.getCEP(this.cep).subscribe((data) => {
-            this.cep = data.cep;
-            this.logradouro = data.logradouro;
-            this.localidade = data.localidade;
-            this.bairro = data.bairro;
-            this.uf = data.uf;
+          this.cepService.getCEP(this.cadastro.endereco.cep).subscribe((data) => {
+            this.cadastro.endereco.cep = data.cep;
+            this.cadastro.endereco.logradouro = data.logradouro;
+            this.cadastro.endereco.localidade = data.localidade;
+            this.cadastro.endereco.bairro = data.bairro;
+            this.cadastro.endereco.uf = data.uf;
 
-            console.log(this.cepService)
-            console.log(this.bairro);
+            console.log('endereco:', this.cadastro.endereco)
+            console.log(this.cadastro.endereco.bairro);
           });
 
       }
@@ -88,7 +85,7 @@ export class FormComponent implements OnInit{
         })
         // alert("to funcionando")
         console.log(this.cadastro)
-        console.log(this.bairro)
+        console.log(this.cadastro.endereco.bairro)
       }
 
 

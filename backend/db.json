@@ -1,29 +1,31 @@
 {
   "cadastro": {
     "id": 0,
-    "nome": "Jennyfer Pereira Lamego Malheiros da Silveira",
-    "email": "jennyfer.lamego@gmail.com",
-    "tel": "",
-    "cep": "",
-    "endereco": "Rua Mamanguape 546",
-    "numero": 101,
-    "complemento": "101",
-    "bairro": "",
-    "cidade": "",
-    "uf": "",
+    "nome": "dfsdgvsgvs",
+    "email": "vsvsdv",
+    "tel": 99999999999,
+    "endereco": {
+      "cep": "22743-070",
+      "logradouro": "Rua Olímpia do Couto",
+      "localidade": "Rio de Janeiro",
+      "bairro": "Pechincha",
+      "uf": "RJ",
+      "cidade": "",
+      "complemento": "",
+      "numero": ""
+    },
     "funcao": "",
-    "logradouro": "",
     "nomeCard": "",
     "bandeira": "",
     "cvc": "",
     "validade": ""
   },
   "dadosCartao": {
-    "numero": "",
-    "funcao": "",
-    "bandeira": "",
-    "cvc": "",
-    "nomeCard": "Maria João",
-    "validade": ""
+    "numero": 1111111111111111,
+    "funcao": "credito",
+    "bandeira": "master",
+    "cvc": 424,
+    "nomeCard": "Jennyfer Pereira Lamego Malheiros da Silveira",
+    "validade": "2023-02-17"
   }
 }

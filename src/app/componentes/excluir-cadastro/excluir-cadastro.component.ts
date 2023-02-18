@@ -2,6 +2,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Cadastro } from './../cadastro/cadastro';
 import { Component } from '@angular/core';
 import { CadastroService } from '../cadastro.service';
+import { Cep } from 'src/app/cep-service.service';
 
 @Component({
   selector: 'app-excluir-cadastro',
@@ -10,25 +11,37 @@ import { CadastroService } from '../cadastro.service';
 })
 export class ExcluirCadastroComponent {
 
-  cadastro: Cadastro = {
-    id: 0,
-    nome: '',
-    email: '',
-    tel: '',
+  cep: Cep = {
     cep: '',
-    endereco: '',
-    numero: '',
-    complemento: '',
-    bairro: '',
-    cidade: '',
-    uf: '',
-    funcao: '',
     logradouro: '',
-    nomeCard: '',
-    bandeira: '',
-    cvc: '',
-    validade: ''
+    localidade: '',
+    bairro: '',
+    uf:''
+
   }
+
+
+
+      cadastro: Cadastro = {
+        id: 0,
+        nome: '',
+        email: '',
+        tel: '',
+
+        endereco: {
+          ...this.cep,
+
+          cidade: '',
+          complemento: '',
+          numero: '',
+        },
+
+        funcao: '',
+        nomeCard: '',
+        bandeira: '',
+        cvc: '',
+        validade: ''
+      };
 
   constructor(
     private service: CadastroService,

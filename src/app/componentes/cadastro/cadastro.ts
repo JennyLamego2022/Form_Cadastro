@@ -3,19 +3,21 @@ export interface Cadastro {
   nome: string
   email: string
   tel: string
-  cep: string
-  endereco: string
-  numero: string
-  complemento: string
-  bairro: string
-  cidade: string
-  uf: String
+  endereco: {
+    localidade:string
+    cep: string
+    complemento: string
+    numero: string
+    bairro: string
+    cidade: string
+    uf: String
+    logradouro: string
+  }
   nomeCard: string
   bandeira: string
   funcao: string
   cvc: string
   validade: string
-  logradouro: string
 
 };
 

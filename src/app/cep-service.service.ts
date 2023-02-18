@@ -25,7 +25,7 @@ export class CepServiceService {
 
   constructor(private httpCliente: HttpClient) { }
 
-  getCEP( cep: Cep): Observable<Cep>{
+  getCEP( cep: string): Observable<Cep>{
     return this.httpCliente.get<Cep>(`https://viacep.com.br/ws/${cep}/json/`);
 
   }

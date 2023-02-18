@@ -1,4 +1,4 @@
-import { CepServiceService } from './../../cep-service.service';
+import { Cep, CepServiceService } from './../../cep-service.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CadastroService } from './../cadastro.service';
 import { Cadastro } from './../cadastro/cadastro';
@@ -12,33 +12,37 @@ import { Component, OnInit } from '@angular/core';
 export class EditarCadastroComponent implements OnInit{
   [x: string]: any;
 
-  cep: any;
-  logradouro: any;
-  localidade: any;
-  bairro: any;
-  uf: any;
-  ddd: any;
+  cep: Cep = {
+    cep: '',
+    logradouro: '',
+    localidade: '',
+    bairro: '',
+    uf:''
+
+  }
 
 
-cadastro: Cadastro = {
-  id: 0,
-  nome: '',
-  email: '',
-  tel: '',
-  cep: '',
-  endereco: '',
-  numero: '',
-  complemento: '',
-  bairro: '',
-  cidade: '',
-  uf: '',
-  funcao: '',
-  logradouro: '',
-  nomeCard: '',
-  bandeira: '',
-  cvc: '',
-  validade: ''
-}
+
+      cadastro: Cadastro = {
+        id: 0,
+        nome: '',
+        email: '',
+        tel: '',
+
+        endereco: {
+          ...this.cep,
+
+          cidade: '',
+          complemento: '',
+          numero: '',
+        },
+
+        funcao: '',
+        nomeCard: '',
+        bandeira: '',
+        cvc: '',
+        validade: ''
+      };
 constructor(
   private cepService: CepServiceService,
   private service: CadastroService,
@@ -56,16 +60,17 @@ ngOnInit(): void {
 }
 
 consultaCep() {
-  this.cepService.getCEP(this.cep).subscribe((data) => {
-    this.cep = data.cep;
-    this.logradouro = data.logradouro;
-    this.localidade = data.localidade;
-    this.bairro = data.bairro;
-    this.uf = data.uf;
+  this.cepService.getCEP(this.cadastro.endereco.cep).subscribe((data) => {
+    this.cadastro.endereco.cep = data.cep;
+    this.cadastro.endereco.logradouro = data.logradouro;
+    this.cadastro.endereco.localidade = data.localidade;
+    this.cadastro.endereco.bairro = data.bairro;
+    this.cadastro.endereco.uf = data.uf;
 
-    console.log(this.cepService)
-    console.log(this.bairro);
+    console.log('endereco:', this.cadastro.endereco)
+    console.log(this.cadastro.endereco.bairro);
   });
+
 }
 
 blur(event: any) {

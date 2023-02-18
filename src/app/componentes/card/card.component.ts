@@ -21,26 +21,7 @@ export class CardComponent implements OnInit {
     validade: ''
   }
 
-  cadastro: Cadastro = {
-    id: 0,
-    nome: '',
-    email: '',
-    tel: '',
-    cep: '',
-    endereco: '',
-    numero: '',
-    complemento: '',
-    bairro: '',
-    cidade: '',
-    uf: '',
-    funcao: '',
-    logradouro: '',
 
-    bandeira: '',
-    cvc: '',
-    validade: '',
-    nomeCard: ''
-  };
 
   constructor(
     private service: CadastroService,
@@ -52,12 +33,12 @@ export class CardComponent implements OnInit {
 
   }
 
-  
+
   cadastroDadosCard(){
     this.service.criarPG(this.dadosCartao).subscribe(() => {
       this.router.navigate(['/cadastro'])
     })
-    console.log(this.cadastro)
+   
     console.log(this.dadosCartao)
     alert("opa")
   }

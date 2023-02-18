@@ -10,25 +10,37 @@ import { Cadastro, dadosCartao } from './cadastro';
 })
 export class CadastroComponent implements OnInit{
 
-  @Input() cadastro: Cadastro = {
-    id:0,
-    nome: '',
-    email: '',
-    tel: '',
+   cep: Cep = {
     cep: '',
-    endereco: 'Rua Olimpia do Couto',
-    numero: '',
-    complemento: '',
-    bairro: '',
-    cidade: '',
-    uf: '',
-    funcao: 'debito',
     logradouro: '',
-    nomeCard: '',
-    bandeira: '',
-    cvc: '',
-    validade: ''
-  };
+    localidade: '',
+    bairro: '',
+    uf:''
+
+  }
+
+
+
+  @Input() cadastro: Cadastro = {
+        id: 0,
+        nome: '',
+        email: '',
+        tel: '',
+
+        endereco: {
+          ...this.cep,
+
+          cidade: '',
+          complemento: '',
+          numero: '',
+        },
+
+        funcao: '',
+        nomeCard: '',
+        bandeira: '',
+        cvc: '',
+        validade: ''
+      };
 
   @Input() dadosCartao: dadosCartao = {
     numero: '',

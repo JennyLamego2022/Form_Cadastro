@@ -39,31 +39,31 @@
         <fieldset class="input-group adress">
           <p class="input-box">
             <label for="cep">CEP</label>
-            <input type="text" id="cep" name="cep"  (blur)="blur($event)" ngModel [(ngModel)]="cep" placeholder="Ex: 12345567" required f>
+            <input type="text" id="cep" name="cep"  (blur)="blur($event)"  [(ngModel)]="cadastro.endereco.cep" placeholder="Ex: 12345567" required f>
           </p>
           <p class="input-box">
             <label for="adress">Endereço</label>
-            <input type="text" id="adress" name="adress" ngModel [(ngModel)]="logradouro" [(ngModel)]="cadastro.endereco" required >
+            <input type="text" id="adress" name="adress" [(ngModel)]="cadastro.endereco.logradouro" required >
           </p>
           <p class="input-box">
             <label for="number">Número da residência</label>
-            <input type="number" id="number" name="number" placeholder="número ou s/n" required [(ngModel)] = "cadastro.numero">
+            <input type="number" id="number" name="number" placeholder="número ou s/n" required >
           </p>
           <p class="input-box">
             <label for="complemento">Complemento (opcional)</label>
-            <input type="text" id="complemento" name="complemento" placeholder="Apto, sala, conjunto, etc." [(ngModel)]="cadastro.complemento">
+            <input type="text" id="complemento" name="complemento" placeholder="Apto, sala, conjunto, etc." >
           </p>
           <p class="input-box API">
             <label for="district">Bairro</label>
-            <input type="text" id="district" name="district" ngModel [(ngModel)]="this.bairro" placeholder="Insira o CEP acima para preencher o bairro" required disabled>
+            <input type="text" id="district" name="district"  [(ngModel)]="cadastro.endereco.bairro" placeholder="Insira o CEP acima para preencher o bairro" required disabled>
           </p>
           <p class="input-box API">
             <label for="city">Cidade</label>
-            <input type="text" id="city" name="city" ngModel [(ngModel)]="localidade" placeholder="Insira o CEP acima para preencher a cidade" required disabled>
+            <input type="text" id="city" name="city" [(ngModel)]="cadastro.endereco.localidade" placeholder="Insira o CEP acima para preencher a cidade" required disabled>
           </p>
           <p class="input-box API">
             <label for="state">Estado</label>
-            <input type="text" id="state" name="state" ngModel [(ngModel)]="uf" placeholder="Insira o CEP acima para preencher o estado" required disabled>
+            <input type="text" id="state" name="state" [(ngModel)]="cadastro.endereco.uf" placeholder="Insira o CEP acima para preencher o estado" required disabled>
           </p>
         </fieldset>
         <!-- <p class="submit">
